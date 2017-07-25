@@ -1,0 +1,113 @@
+
+https://github.com/IBM/tjbot-sports-buddy/?cm_mc_uid=86002815903414998721269&cm_mc_sid_50200000=#9-register-for-mlb-fantasy-data-service
+
+
+hockey-Conversation
+{
+  "url": "https://gateway.watsonplatform.net/conversation/api",
+  "username": "6ac9be36-8bb2-4504-8a60-e2731e1ecea7",
+  "password": "JqEQgTR5Tm8l"
+}
+
+ConversationWorkspace: tjbot-sports-buddy
+{
+  "url": "https://gateway.watsonplatform.net/tone-analyzer/api",
+  "username": "18c2b78e-5426-4026-a34c-c3bec9b9347d",
+  "password": "YJ6ccV086nWY"
+}
+Workspace ID: fc516668-0043-443e-b371-3d35d024f178 
+
+
+hockey-Discovery
+{
+  "url": "https://gateway.watsonplatform.net/discovery/api",
+  "username": "23498fde-b25f-4b21-a782-8716e6545e71",
+  "password": "UIw3FlOZmh0t"
+}
+
+Watson Discovery News API information
+collection_id
+69949c9c-2be5-4999-85f6-5c926fa49d4e
+configuration_id
+62be8f01-ae66-44dd-8ba3-62598f472ee1
+environment_id
+d1dbaf46-bc41-4e86-ba3a-dfefd08c84cd
+
+
+
+hockey-TextToSpeech
+{
+  "url": "https://stream.watsonplatform.net/text-to-speech/api",
+  "username": "56d7018b-1ad4-40fa-a232-6bbf4f892103",
+  "password": "H4pYMKhIneuF"
+}
+
+hockey-SpeechToText
+{
+  "url": "https://stream.watsonplatform.net/speech-to-text/api",
+  "username": "06662877-c69e-41c8-82da-32c9b4d1b2fb",
+  "password": "segqOsCI1Cpm"
+}
+
+hockey-ToneAnalyzer
+{
+  "url": "https://gateway.watsonplatform.net/tone-analyzer/api",
+  "username": "18c2b78e-5426-4026-a34c-c3bec9b9347d",
+  "password": "YJ6ccV086nWY"
+}
+
+-----------------------------
+twilio
+simpgre5@us.ibm.com
+123456Leopold8
+(720) 707-0405
+ACCOUNT SID AC1cf5c42c5b1d8b75f5602d0af9d46994
+AUTH TOKEN  0043c9695e591b85d11cb9ba16e91ce2
+
+TEST ACCOUNT SID - Used to exercise the REST API
+AC61e25cbaeaf402f36a34ee1de3662382
+TEST AUTHTOKEN 
+45549f8e7a02a03a3f3586ac0046aad0
+
+
+curl 'https://api.twilio.com/2010-04-01/Accounts/AC1cf5c42c5b1d8b75f5602d0af9d46994/Messages.json' -X POST \
+--data-urlencode 'To=+13039072233' \
+--data-urlencode 'From=+17207070405' \
+--data-urlencode 'Body=hello from twilio' \
+-u AC1cf5c42c5b1d8b75f5602d0af9d46994:0043c9695e591b85d11cb9ba16e91ce2
+
+{
+    "sid": "SM3392aba349ad4c749820398ab95d3c98",
+    "date_created": "Thu, 13 Jul 2017 01:30:20 +0000",
+    "date_updated": "Thu, 13 Jul 2017 01:30:20 +0000",
+    "date_sent": null,
+    "account_sid": "AC1cf5c42c5b1d8b75f5602d0af9d46994",
+    "to": "+13039072233",
+    "from": "+17207070405",
+    "messaging_service_sid": null,
+    "body": "Sent from your Twilio trial account - hello from twilio",
+    "status": "queued",
+    "num_segments": "1",
+    "num_media": "0",
+    "direction": "outbound-api",
+    "api_version": "2010-04-01",
+    "price": null,
+    "price_unit": "USD",
+    "error_code": null,
+    "error_message": null,
+    "uri": "/2010-04-01/Accounts/AC1cf5c42c5b1d8b75f5602d0af9d46994/Messages/SM3392aba349ad4c749820398ab95d3c98.json",
+    "subresource_uris": {
+        "media": "/2010-04-01/Accounts/AC1cf5c42c5b1d8b75f5602d0af9d46994/Messages/SM3392aba349ad4c749820398ab95d3c98/Media.json"
+    }
+}
+
+
+-----------------------------
+https://developer.fantasydata.com
+simpgre5@us.ibm.com / Leopold1
+Subscription name MLB Free Trial subscription Rename
+Primary key f6c83f2d33694611ae375d823a1c31f0
+Secondary key bbde1bfb1609400fb5bc42da5982709d
+
+
+

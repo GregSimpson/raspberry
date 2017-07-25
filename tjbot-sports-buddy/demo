@@ -1,0 +1,7 @@
+#/bin/sh
+
+python redlight.py
+python greenlight.py
+python discoLight.py
+
+#sudo node /home/pi/tjbot2/tjwave/wavetest.js
