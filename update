@@ -1,0 +1,78 @@
+sudo apt-get -y update
+sudo apt-get -y dist-upgrade
+
+sudo apt-get -y install --upgrade autocutsel
+sudo apt-get -y install --upgrade curl
+sudo apt-get -y install --upgrade dos2unix
+sudo apt-get -y install --upgrade git
+sudo apt-get -y install --upgrade nodejs
+sudo apt-get -y install --upgrade nodered
+sudo apt-get -y install --upgrade python-pip
+sudo apt-get -y install --upgrade python
+sudo apt-get -y install --upgrade python3
+sudo apt-get -y install --upgrade vim-gtk
+
+#sudo apt-get -y install --upgrade nodejs npm node-semver
+
+# to autostart nodered at bootup
+#sudo systemvtl enable nodered.service
+
+# for the motion detection page
+sudo pip install imutils
+
+### - ffmpeg install 
+#cd ~/bin
+## I downloaded and compiled ffmpeg from the source. Download ffmpeg-3.3.2.tar.bz2
+## https://www.ffmpeg.org/download.html
+## Unpack it.
+#tar -xvf ffmpeg-3.3.2.tar.bz2
+## then change to that directory and:
+#./configure
+#make
+#sudo make install
+
+
+
+
+# to install the most recent java version
+# To have all the time the most recent Oracle java installed, you can do check current Java
+
+# pi@raspberrypi:~ $ java -version java version "1.8.0_65" Java(TM) SE Runtime Environment (build 1.8.0_65-b17) Java HotSpot(TM) Client VM (build 25.65-b01, mixed mode)
+
+#remove OpenJDK
+# sudo apt-get purge openjdk*
+
+# add digital key
+# sudo apt-key adv -recv-key -keyserver keyserver.ubuntu.com EEA14886
+
+##add packet source
+#sudo vim /etc/apt/sources.list
+#add following lines
+#
+#deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main
+#deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main
+
+# #install Java 8
+# sudo apt-get update
+# sudo apt-get install oracle-java8-installer
+# sudo apt-get install oracle-java8-set-default
+
+# #remove old Java
+# sudo apt-get purge openjdk*
+# sudo apt-get purge java7*
+# sudo apt-get autoremove
+
+# #check success
+# java -version
+# #pi@raspberrypi:~ $ java -version java version "1.8.0_131" Java(TM) SE Runtime Environment (build 1.8.0_131-b11) Java HotSpot(TM) Client VM (build 25.131-b11, mixed mode)
+
+npm install python-shell
+npm test
+
+
+
+
+sudo apt-get -y autoremove
+sudo apt-get -y clean
+
+
