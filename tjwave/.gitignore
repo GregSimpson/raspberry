@@ -1,0 +1,13 @@
+#config file
+config.js
+
+#sounds/club.wav
+#sounds/tiger.wav
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Optional npm cache directory
+.npm
+.DS_Store
