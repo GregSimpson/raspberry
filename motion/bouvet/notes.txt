@@ -1,0 +1,26 @@
+https://www.bouvet.no/bouvet-deler/utbrudd/building-a-motion-activated-security-camera-with-the-raspberry-pi-zero
+
+
+I set up logrotate to run daily with a 50 file limit
+sudo gvim /etc/logrotate.d/images
+
+motion is setup to logrotate by default
+/etc/logrotate.d/motion
+
+   logs are in : /var/log/motion/motion.log
+   images are stored in : /home/pi/Documents/motion
+
+sudo logrotate -vf /etc/logrotate.d/motion 
+sudo logrotate -vf /etc/logrotate.d/images 
+
+
+I set up a systemd service for motion
+sudo gvim /etc/systemd/system/motion.service
+
+# run it with
+# sudo systemctl enable motion.service
+# sudo systemctl start motion.service
+ sudo systemctl disable motion.service
+
+tail -f /home/pi/camera/bouvet/logs/motion.log
+
