@@ -15,12 +15,14 @@ sudo logrotate -vf /etc/logrotate.d/images
 
 
 I set up a systemd service for motion
-sudo gvim /etc/systemd/system/motion.service
+sudo gvim /lib/systemd/system/motion.service
+# NOT # sudo gvim /etc/systemd/system/motion.service
 
 # run it with
+# NOT # FIRST enable the daemon in /etc/default/motion
 # sudo systemctl enable motion.service
 # sudo systemctl start motion.service
- sudo systemctl disable motion.service
+# sudo systemctl disable motion.service
 
 tail -f /home/pi/camera/bouvet/logs/motion.log
 
